@@ -51,9 +51,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
-
-
 @Composable
 fun CardApp() {
     Column(
@@ -81,11 +78,11 @@ fun CardApp() {
         Text(
             text = "Android Developer Extraordinaire",
             style = TextStyle(fontSize = 23.sp),
-            color = Color(0xFF3ddc84)
-        )
+            color = Color(0xFF3ddc84))
+        
         Spacer(modifier = Modifier.height(300.dp))
 
-        // Telefon numarası
+        // Phone number
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Start,
@@ -97,20 +94,16 @@ fun CardApp() {
                 modifier = Modifier
                     .size(24.dp)
                     .padding(top = 6.dp),
-                tint = Color(0xFF556B2F).copy(1F)
-            )
+                tint = Color(0xFF556B2F).copy(1F))
 
             Text(
                 text = "         0542 282 43 64",
                 style = TextStyle(fontSize = 14.sp),
-                modifier = Modifier.padding(4.dp)
-
-            )
+                modifier = Modifier.padding(4.dp) )
         }
-
         Spacer(modifier = Modifier.height(10.dp))
 
-        // E-posta adresi
+        // E-mail adress
         Row(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.Start,
@@ -122,48 +115,30 @@ fun CardApp() {
                 modifier = Modifier
                     .padding(end = 45.dp)
                     .size(18.dp),
-                tint = Color(0xFF556B2F).copy(1f)
-            )
-
-
+                tint = Color(0xFF556B2F).copy(1f)  )
             Text(
                 text = "@AndroidDev",
-                style = TextStyle(fontSize = 14.sp),
-
-                )
+                style = TextStyle(fontSize = 14.sp),)
         }
 
         Spacer(modifier = Modifier.height(10.dp))
 
-        // Paylaşılacak e-posta adresi
+        // Email address to be shared
         Row(
-
-
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.Start
-        )
+            horizontalArrangement = Arrangement.Start)
         {
             Icon(
                 painter = painterResource(id = R.drawable.share),
                 contentDescription = null,
                 modifier = Modifier.size(15.dp),
-                tint = Color(0xFF556B2F).copy(1F)
-
-            )
-
+                tint = Color(0xFF556B2F).copy(1F) )
             Text(
                 text = "      Ahmetkaragunlu67@gmail.com",
                 style = TextStyle(fontSize = 14.sp),
-                modifier = Modifier.padding(start = 16.dp)
-
-
-            )
-        }
+                modifier = Modifier.padding(start = 16.dp) )}
     }
 }
-
-
-
 @Preview(showBackground = true)
 @Composable
 fun CardAppPreview() {
